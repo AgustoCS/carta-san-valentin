@@ -2,17 +2,18 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Fondo romántico */
 }
 
 .contenedor {
     text-align: center;
-    position: relative;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* Estilos de la carta */
@@ -21,10 +22,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -47,10 +45,6 @@ strong {
 
 /* Estilos del corazón animado */
 .corazon {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 50px;
     height: 50px;
     background-color: #e74c3c;
@@ -67,34 +61,19 @@ strong {
         30% 0
     );
     animation: latido 1.5s infinite;
+    margin: 0 auto 20px;
 }
 
 @keyframes latido {
     0% {
-        transform: translateX(-50%) scale(1);
+        transform: scale(1);
     }
     50% {
-        transform: translateX(-50%) scale(1.1);
+        transform: scale(1.1);
     }
     100% {
-        transform: translateX(-50%) scale(1);
+        transform: scale(1);
     }
-}
-
-/* Estilos del reproductor de música */
-.reproductor {
-    margin-top: 20px;
-}
-
-.reproductor p {
-    color: #e74c3c;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-audio {
-    width: 100%;
-    max-width: 300px;
 }
 
 /* Estilos responsive */

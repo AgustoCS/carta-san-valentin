@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta de San Valentín</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Estilos generales -->
+    <link rel="stylesheet" href="extra.css"> <!-- Estilos adicionales -->
 </head>
 <body>
     <div class="contenedor">
@@ -19,15 +20,18 @@
 
         <!-- Corazón animado -->
         <div class="corazon"></div>
-    </div>
 
-    <!-- Reproductor de música manual -->
-    <div class="reproductor">
-        <p>¿Quieres escuchar una canción especial?</p>
-        <audio controls>
-            <source src="cancion.mp3" type="audio/mpeg">
-            Tu navegador no soporta la reproducción de audio.
-        </audio>
+        <!-- Foto -->
+        <img src="foto.jpg" alt="Nuestra foto" class="foto">
+
+        <!-- Reproductor de música manual -->
+        <div class="reproductor">
+            <p>¿Quieres escuchar una canción especial?</p>
+            <audio controls>
+                <source src="cancion.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
     </div>
 </body>
 </html>

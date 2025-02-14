@@ -1,0 +1,24 @@
+/* Estilos para la foto */
+.foto {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del reproductor de música */
+.reproductor {
+    margin-top: 20px;
+}
+
+.reproductor p {
+    color: #e74c3c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
+}
