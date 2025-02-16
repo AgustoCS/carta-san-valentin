@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="extra.css">
 </head>
 <body>
-    <!-- Pantalla inicial con video y botón -->
+    <!-- Pantalla inicial con video y botones -->
     <div class="inicio" id="inicio">
-        <video autoplay loop muted class="video-fondo">
-            <source src="video.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
+        <div class="video-contenedor">
+            <video autoplay loop muted class="video-fondo">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
         <div class="contenido-inicio">
             <p>¡Haz clic para abrir la carta!</p>
             <button id="abrirCarta">Abrir Carta</button>
+            <button id="reproducirMusica">🎵 Reproducir Música</button>
         </div>
     </div>
 
     <!-- Carta (oculta inicialmente) -->
     <div class="contenedor hidden" id="carta">
+        <!-- Carta -->
         <div class="carta">
             <h1>¡Feliz San Valentín!</h1>
             <p>Hola MI JAS,</p>
@@ -38,12 +42,12 @@
         <div class="corazon"></div>
 
         <!-- Foto -->
-        <img src="foto.jpg" alt="Nuestra foto" class="foto">
+        <img src="nuestra-foto.jpg" alt="Foto" class="foto">
 
         <!-- Reproductor de música manual -->
         <div class="reproductor">
-            <p>¿Quieres escuchar una canción especial?</p>
-            <audio controls>
+            <button id="reproducirMusicaCarta">🎵 Reproducir Música</button>
+            <audio controls id="musica">
                 <source src="nueva-cancion.mp3" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
