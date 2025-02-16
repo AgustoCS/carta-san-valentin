@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="extra.css">
 </head>
 <body>
-    <div class="contenedor">
-        <!-- Carta -->
+    <!-- Pantalla inicial con video y botón -->
+    <div class="inicio" id="inicio">
+        <video autoplay loop muted class="video-fondo">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        <div class="contenido-inicio">
+            <p>¡Haz clic para abrir la carta!</p>
+            <button id="abrirCarta">Abrir Carta</button>
+        </div>
+    </div>
+
+    <!-- Carta (oculta inicialmente) -->
+    <div class="contenedor hidden" id="carta">
         <div class="carta">
             <h1>¡Feliz San Valentín!</h1>
             <p>Hola MI JAS,</p>
-            <p>En este día especial, quiero decirte que <strong>LA AMO MUCHOTE</strong>. Eres mi Niña de Cristal, muy especial y mi razón de felicidad. Estoy demasiado agradecido de tenerte en mi vida.</p>
+            <p>En este día especial, quiero decirte que <strong>LA AMO MUCHOTE</strong>. Eres mi Niña de Cristal. Ten presente que eres muy especial y mi raíz de donde vienen mis sonrisas y mis buenos pensamientos. Como una vez te dije, me siento como un caballero de la era medieval y quiero siempre proteger todo de ti, y desde una caja de máxima seguridad, tu hermoso corazón y tus sentimientos.</p>
+            <p>Ahora deseo que leas esto:</p>
+            <p><strong>QUÉ ES EL AMOR</strong></p>
+            <p>Amor es eso, hacer sentir sin tocar, es apreciar la locura y los defectos, es poder amar sin romper. Amor es estar siempre, aquí o allá, sin importar el miedo, la distancia y la oscuridad. Amor es sanar lo que otros han echado a perder... es mirarte a los ojos y decirte con una sonrisa que todo va a estar bien. Amor es decir: lo siento... me equivoqué... volvamos a empezar... porque después de todo, el amor es solo para valientes, para corazones que nunca dejan de intentar.</p>
+            <p><strong>J. WAILEN</strong></p>
             <p>Con todo mi cariño,</p>
             <p>MAR</p>
         </div>
@@ -22,16 +38,18 @@
         <div class="corazon"></div>
 
         <!-- Foto -->
-        <img src="nuestra-foto.jpg" alt="nuestra-foto" class="foto">
+        <img src="foto.jpg" alt="Nuestra foto" class="foto">
 
         <!-- Reproductor de música manual -->
         <div class="reproductor">
             <p>¿Quieres escuchar una canción especial?</p>
             <audio controls>
-                <source src="cancion.mp3" type="audio/mpeg">
+                <source src="nueva-cancion.mp3" type="audio/mpeg">
                 Tu navegador no soporta la reproducción de audio.
             </audio>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

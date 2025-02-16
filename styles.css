@@ -2,12 +2,65 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Fondo romántico */
+}
+
+/* Pantalla inicial */
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contenido-inicio {
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.contenido-inicio p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#abrirCarta {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#abrirCarta:hover {
+    background-color: #c0392b;
+}
+
+/* Carta (oculta inicialmente) */
+.hidden {
+    display: none;
 }
 
 .contenedor {
@@ -74,6 +127,31 @@ strong {
     100% {
         transform: scale(1);
     }
+}
+
+/* Estilos para la foto */
+.foto {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del reproductor de música */
+.reproductor {
+    margin-top: 20px;
+}
+
+.reproductor p {
+    color: #e74c3c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
 }
 
 /* Estilos responsive */
